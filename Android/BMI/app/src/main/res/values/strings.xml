@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="enterH">Enter height\'s feet part</string>
+    <string name="EnterH2">Enter height\'s inch part</string>
+    <string name="EnterW">Enter weight in kg</string>
+    <string name="calc">Calculate</string>
+    <string name="res">Result</string>
+</resources>
