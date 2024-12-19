@@ -1,0 +1,23 @@
+\documentclass[]{article}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}} % to change the footnote marking
+\renewcommand{\thempfootnote}{\fnsymbol{footnote}} % to change the mini page footnote marking
+
+
+\begin{document}
+	\Large
+The following is an example of ... mini page\footnote{Foot note style in mini pages is different.}.\\[5mm]
+%
+	\begin{minipage}[t]{0.45\linewidth} % t , b, c
+		Both Rubi and Lila\footnote{They are sisters.} study ... Joy\footnote{They are friends.} study in class II. 
+	\end{minipage}\hfill
+%
+	\begin{minipage}[t]{0.45\linewidth}
+	Though the milk of a cow\footnote{Domestic animal.} is ... milk of a tiger\footnote{Wild animal.}.
+	\end{minipage}\\[10mm]
+%
+	Foot notes in a mini page are marked by lowercase alphabets and placed ...\\\\
+	
+	
+	
+\end{document}

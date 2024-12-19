@@ -1,0 +1,40 @@
+\documentclass[twocolumn]{article}
+%
+\usepackage{multicol} % for multicols environment
+%
+\columnseprule = 1mm %default value is 0mm i.e, invisible
+\columnsep = 10mm % default = 3.5 mm , specifies the gap between two columns
+\multicolsep = 20mm % default = 4.5 mm , controls the vertical gap before and after the envi- ronment
+%\textwidth = 50mm
+% \columnwidth is automatically calculated \textwidth and \columnsep
+%
+\begin{document}
+	This is an example where a ... fklkdsaf dlkfals kdlksfla kdmskfl
+	%
+	\begin{multicols}{3}
+		\raggedright
+		This is a three-column paragraph. ... klfkdsflksdkfsd klkksfkls kflafkdfkl sdlkflkfkldfkdfkdklasf fjadkkdfjlk djfkdflkd sajflkjds End AAAAAAAAA aaaaaaa BBBBBBB \columnbreak
+		
+		 \large This a new flksa kdsflsakd flksaf dsflksak fkdsflkas kfklas fdnkjfas dddddd dnkfasd fdjsnfjks fdsnjkfnsa ndjfans
+	\end{multicols}
+	%
+	In this example, all the three ...\\
+	\Large\bfseries
+	In a multi-column page, the /newpage and /pagebreak commands start a new column instead of a new page. In that case, a new page can be started using /clearpage or /cleardoublepage only.
+	\newpage
+	/newpage or /pagebreak calls new column.
+	\pagebreak 
+	\normalfont
+
+	New column
+	\newpage
+	new column
+	\pagebreak
+	new column
+	\newpage
+	New column
+	\clearpage
+	New page
+	\cleardoublepage
+	New new page
+ \end{document}

@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{multirow}
+
+%
+\begin{document}
+\begin{table}[!htb]
+    \centering
+    \caption{Result}
+
+    \begin{tabular}{|l|c|c|c|c|c|}
+        % \multicolumn{nc}{calign}{centry}, nc is the number of columns to be merged, calign is the alignment of the merged column, and centry is the entry of that merged cell.
+        % \multirow{nr}{cwidth}{centry}, nr is the number of rows to be merged, cwidth is the width of the merged cell, and centry is the entry of that merged cell.  use * in place of cwidth for auto-adjusted width
+        \hline 
+        \multirow{2}{*}{Name} & \multicolumn{4}{|c|}{Subjects} & \multirow{2}{*}{Total}\\ 
+        \cline{2-5} % \cline{m-n} command is used in Table for drawing a horizontal line covering columns m to n only
+            & Math & Phy & Chem & English & \\ 
+        \hline
+        \hline Robin & 80 & 68 & 60 & 57 & 265\\
+        \hline Julie & 72 & 62 & 66 & 63 & 263\\
+        \hline Robert & 75 & 70 & 71 & 69 & 285\\
+        \hline \multicolumn{6}{|c|}{\multirow{1}{*}{Emon}}\\
+        \hline
+
+        
+    \end{tabular}
+\end{table}
+
+    \end{document}

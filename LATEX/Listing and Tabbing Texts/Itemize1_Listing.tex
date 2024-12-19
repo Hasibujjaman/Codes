@@ -1,0 +1,34 @@
+\documentclass[11pt,a4paper]{article}
+%
+%\usepackage{graphicx}
+\renewcommand{\labelitemi}{$\star$}
+\renewcommand{\labelitemii}{$\Rightarrow\ \ \ \ $}
+\renewcommand{\labelitemiii}{$\Rightarrow\Rightarrow \ \ \ $}
+\renewcommand{\labelitemiv}{$\Rightarrow\Rightarrow\Rightarrow \ \ $}
+
+
+\begin{document}
+As in the case of the enumerate environment, the default markings in the itemize environment can also be altered by redefining the /labelitemi, /labelitemii, /labelitemiii and /labelitemiv commands.
+\vspace{20mm}
+
+Some Asian countries and … are listed below:
+\begin{itemize}
+    \item India
+        \begin{itemize}
+            \item Assam
+            \begin{itemize}
+                \item Sonitpur
+                \begin{itemize}
+                    \item Tezpur
+                    \item Dhekiajuli
+                    \item Balipara
+                \end{itemize}
+                \item Kamrup
+                \item Cachar
+            \end{itemize}
+            \item Bihar
+            \item Punjab
+        \end{itemize}
+    \item Sri Lanka
+\end{itemize}
+\end{document}

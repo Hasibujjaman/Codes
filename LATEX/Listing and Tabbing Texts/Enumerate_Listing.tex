@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+
+\begin{document}
+{\Large\bf A maximum of four enumerate environments can be nested one inside another for producing a hierarchy of items}\\[10mm]
+    Some Asian countries and … listed below:
+    \setlength{\itemsep}{100mm}
+    \begin{enumerate}
+        \item India
+        \begin{enumerate}
+            \item Assam
+            \begin{enumerate}
+                \item Sonitpur
+                \begin{enumerate}
+                    \item Tezpur
+                    \item Dhekiajuli
+                    \item Balipara
+                \end{enumerate}
+                \item Kamrup
+                \item Cachar
+            \end{enumerate}
+            \item Bihar
+            \item Punjab
+        \end{enumerate}
+
+        \item Sri Lanka
+        \item Bangladesh\label{item:Ban}
+        \begin{enumerate}
+            \item Dhaka
+            \item Rajshahi\label{item:Raj}
+            \begin{enumerate}
+                \item Bogura\label{item:Bog}
+                \begin{enumerate}
+                    \item Nandigram\label{item:Nandi}
+                    \item Kahalu
+                \end{enumerate}
+                \item Natore
+                \item Singra
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+    Thana \ref{item:Nandi} … district \ref{item:Bog} in
+    Division \ref{item:Raj} of country \ref{item:Ban}
+
+\end{document}

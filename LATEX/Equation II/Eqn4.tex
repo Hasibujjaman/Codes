@@ -1,0 +1,32 @@
+%Conditional mathematical expressions in different forms
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+    %using cases environmnet
+    \begin{equation}
+    \sigma(x) = 
+    \begin{cases}
+        e^{\phi xy} \sqrt{x}~, & \text{if} ~x\geq 0\\
+        0~,                    & \text{otherwise.}
+    \end{cases}
+    \end{equation}
+
+    %using array environment
+    \begin{equation}
+        \sigma(x) = 
+        \left\{
+        \begin{array}{ll}
+            e^{\phi xy} \sqrt{x}~, & \text{if}~ x\geq 0\\
+            0~,                    & \text{otherwise.}
+        \end{array}
+        \right.
+    \end{equation}
+
+    %using eqnarray environment
+    \begin{eqnarray}
+        \sigma(x) &=& e^{\phi xy} \sqrt{x}~,\quad \text{if}~ x\geq 0\\
+                  &=& 0~,\quad \text{otherwise.}
+    \end{eqnarray}
+
+\end{document}

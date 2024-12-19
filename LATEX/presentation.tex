@@ -1,0 +1,87 @@
+\documentclass{beamer}
+
+\title{Ultrasonic Distance Meter}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Introduction}
+    The Ultrasonic Distance Meter is a device that measures the distance to an object using ultrasonic waves. It works by emitting a sound wave and measuring the time it takes for the wave to return after reflecting off an object.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Working Principle}
+    \begin{itemize}
+        \item An ultrasonic sensor emits a pulse of sound.
+        \item The pulse travels until it hits an object and reflects back.
+        \item The sensor calculates the distance based on the time taken for the pulse to return.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Components}
+    \begin{itemize}
+        \item Ultrasonic Sensor (e.g., HC-SR04)
+        \item Microcontroller (e.g., Arduino)
+        \item LCD Display
+        \item Power Supply
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Block Diagram}
+    %\includegraphics[width=0.8\textwidth]{block_diagram.png} % replace with your block diagram image
+\end{frame}
+
+\begin{frame}
+    \frametitle{Code Snippet}
+    % \begin{verbatim}
+    % #include <LiquidCrystal.h>
+    % LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+    % const int trigPin = 9;
+    % const int echoPin = 10;
+
+    % void setup() {
+    %     lcd.begin(16, 2);
+    %     pinMode(trigPin, OUTPUT);
+    %     pinMode(echoPin, INPUT);
+    % }
+
+    % void loop() {
+    %     digitalWrite(trigPin, LOW);
+    %     delay(2);
+    %     digitalWrite(trigPin, HIGH);
+    %     delay(10);
+    %     digitalWrite(trigPin, LOW);
+    %     long duration = pulseIn(echoPin, HIGH);
+    %     int distance = duration * 0.034 / 2;
+    %     lcd.print("Distance: ");
+    %     lcd.print(distance);
+    %     lcd.print(" cm");
+    %     delay(1000);
+    % }
+    % \end{verbatim}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Output}
+    %\includegraphics[width=0.8\textwidth]{output_image.png} % replace with your output image
+\end{frame}
+
+\begin{frame}
+    \frametitle{Conclusion}
+    The Ultrasonic Distance Meter is an efficient and simple device for measuring distances. The project showcases the integration of hardware and software for practical applications.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Questions?}
+    \centering
+    Thank you! \\
+    Any questions?
+\end{frame}
+
+\end{document}

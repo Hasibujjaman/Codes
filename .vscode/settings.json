@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "limits": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp",
+        "stdio.h": "c",
+        "barrier": "cpp",
+        "latch": "cpp",
+        "semaphore": "cpp",
+        "valarray": "cpp",
+        "chrono": "cpp",
+        "random": "cpp",
+        "climits": "cpp"
+    },
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "clang-diagnostic-error"
+    ]
+}

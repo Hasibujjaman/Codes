@@ -1,0 +1,56 @@
+\documentclass[openany]{book}
+%it is set as default that a chapter starts on right page . to change this pass openany to the additional argument of \documentclass[here]{}
+
+\pagenumbering{Roman} % arabic(def)/roman/Roman/alph/Alph
+%
+%\let\thepage\relax 
+\setcounter{page}{1} %def   
+
+\centering
+\begin{document}
+\chapter*{Preface}
+\Large
+The effect would be global if /pagenumbering{} is put in the preamble. For local effect, the command can be put inside the document environment also, e.g., numbering the pages of the front matter of a book by lowercase Roman numerals, while those of the main matter and back matter by Arabic numerals.\\
+\chapter*{Introduction}
+\pagenumbering{roman} %Whenever \pagenumbering{} is used locally, the counter of the pages is reset to unity starting from the page containing the command
+...........Md. Hasibujjaman Chowdhury Emon...........
+\newpage
+\thispagestyle{empty} %this page will not be numbered but will be counted
+....
+\newpage
+\vspace*{\fill}
+----------Done-------
+
+
+
+
+\chapter{First Chapter}
+\pagenumbering{Roman} %will reset page numberring
+	The beginnig of first chapter.
+		\section{First Section}
+		The start of section one.
+			\subsection{First subsection}
+			The start of sub-section one.
+				\subsubsection{First sub-sub-section}
+					The start of sub-sub-section one. Sub-sub-sections are {\bf\Huge not} numbered in case of {\bf\huge article} class.
+					\newpage
+					....
+                    \newpage
+                    \Huge\bfseries
+                    Page no. \thepage
+                    \newpage
+                    Page no. \thepage
+                    \newpage
+                    Page no. \thepage
+                    \newpage
+
+                    \pagenumbering{Alph}
+                    \setcounter{page}{5} %locally set counter for page number
+                    \vspace*{\fill} Page no. \thepage \vspace*{\fill}
+
+                    \newpage
+                    Page no. \thepage
+                    \newpage
+                    Page no. \thepage
+                    \newpage
+\end{document}

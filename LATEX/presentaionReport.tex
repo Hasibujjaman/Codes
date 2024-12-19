@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\title{Ultrasonic Distance Meter}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+The Ultrasonic Distance Meter is a device that measures the distance of objects using ultrasonic sensors. The system works by emitting ultrasonic waves and measuring the time taken for the waves to reflect back after hitting an object.
+
+\section*{System Overview}
+The primary components of the system include an ultrasonic sensor, a microcontroller (like Arduino), and an LCD display. The ultrasonic sensor emits a pulse and detects the echo to calculate the distance.
+
+\section*{Block Diagram}
+\begin{center}
+    %\includegraphics[width=0.8\textwidth]{block_diagram.png} % replace with your block diagram image
+\end{center}
+
+\section*{Code Snippet}
+The following code is used to interface the ultrasonic sensor with an LCD:
+
+\begin{lstlisting}[language=C]
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+const int trigPin = 9;
+const int echoPin = 10;
+
+void setup() {
+    lcd.begin(16, 2);
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+}
+
+void loop() {
+    digitalWrite(trigPin, LOW);
+    delay(2);
+    digitalWrite(trigPin, HIGH);
+    delay(10);
+    digitalWrite(trigPin, LOW);
+    long duration = pulseIn(echoPin, HIGH);
+    int distance = duration * 0.034 / 2;
+    lcd.print("Distance: ");
+    lcd.print(distance);
+    lcd.print(" cm");
+    delay(1000);
+}
+\end{lstlisting}
+
+\section*{Output}
+\begin{center}
+    %\includegraphics[width=0.8\textwidth]{output_image.png} % replace with your output image
+\end{center}
+
+\section*{Conclusion}
+The Ultrasonic Distance Meter effectively measures distance using ultrasonic technology. This project demonstrates the application of sensors in practical scenarios, integrating both hardware and software components.
+
+\end{document}

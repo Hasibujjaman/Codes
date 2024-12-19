@@ -1,0 +1,20 @@
+PWD /Users/emonchowdhury/Library/CloudStorage/GoogleDrive-emonahamed789@gmail.com/My Drive/Codes/ VS Code/LATEX
+INPUT /Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT /Users/emonchowdhury/Library/CloudStorage/GoogleDrive-emonahamed789@gmail.com/My Drive/Codes/ VS Code/LATEX/LE1_2003001_DemoCode.tex
+OUTPUT LE1_2003001_DemoCode.log
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size10.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./LE1_2003001_DemoCode.aux
+INPUT ./LE1_2003001_DemoCode.aux
+INPUT LE1_2003001_DemoCode.aux
+OUTPUT LE1_2003001_DemoCode.aux
+OUTPUT LE1_2003001_DemoCode.pdf
+INPUT /Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT LE1_2003001_DemoCode.aux
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb

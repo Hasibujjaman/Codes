@@ -1,0 +1,27 @@
+\documentclass[]{article}
+
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}} % to change the footnote marking
+%\renewcommand{\thempfootnote}{\fnsymbol{footnote}} % to change the mini page footnote marking
+
+
+\begin{document}
+\hfill The following is an example of ... mini page\hfill \footnote{Foot note style in mini pages is different.}.\\[5mm]
+%
+\begin{minipage}[t]{0.45\linewidth}
+This is minipage 1. Both Rubi and Lila\footnotemark\ study in class~I.
+\end{minipage}
+%
+\footnotetext{They are sisters.}\hfill
+%
+\begin{minipage}[t]{0.35\linewidth}
+The milk of a cow\footnotemark\ is ... 
+\end{minipage}
+\footnotetext{Domestic animal.\label{fn:cow}}\\[8mm]
+%
+\bfseries
+The place of footnote in a mini page is marked first using \linebreak /footnotemark then the corresponding footnote is added later using \mbox{/footnotetext}.
+	
+\end{document}
+
+
+

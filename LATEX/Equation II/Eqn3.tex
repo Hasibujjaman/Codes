@@ -1,0 +1,23 @@
+%Normal texts and gap in math-mode
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+%Normal texts with usual inter-word spacing can be printed in math-mode through the /mbox{}, /text{ } and /mathrm{ } commands
+% ∼, \,, \quad, \qquad, \enspace and \hspace{ } can be used in math-mode for generating blank space of different sizes.
+% \mbox{ } and \text{ } process their arguments in text-mode while \mathrm{ } processes its argument in math-mode.
+
+    \begin{equation*}
+        \mbox{Updated value}\quad x = x^\mathrm{low} + yd \enspace .
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{array}{lcl}
+        \mbox{Minimize}   & f(\mbox{\boldmath{$x$}})            &\\
+        \mbox{Subject to} & g_i(\mbox{\boldmath{$x$}}) \leq 0 ; & i=1,\ldots,m\\
+                          & h_k(\mbox{\boldmath{$x$}}) = 0 ;    & k=1,\ldots,p\\
+                          & x_j \geq 0 ;                        & j=1,\ldots,n
+        \end{array}
+    \end{equation*}
+
+\end{document}

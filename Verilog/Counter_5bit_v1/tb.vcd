@@ -1,0 +1,68 @@
+$date
+	Sat Jun  1 20:33:56 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module counter_tb $end
+$var wire 5 ! q [4:0] $end
+$var reg 1 " clk $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 5 # q [4:0] $end
+$var wire 5 $ q_temp [4:0] $end
+$var wire 5 % d_temp [4:0] $end
+$scope module adder_circuit1 $end
+$var wire 5 & O [4:0] $end
+$var wire 5 ' I [4:0] $end
+$upscope $end
+$scope module register_circuit1 $end
+$var wire 1 " clk $end
+$var wire 5 ( d [4:0] $end
+$var reg 5 ) q [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+0"
+bx !
+$end
+#10
+1"
+#20
+0"
+#30
+1"
+#40
+0"
+#50
+1"
+#60
+0"
+#70
+1"
+#80
+0"
+#90
+1"
+#100
+0"
+#110
+1"
+#120
+0"

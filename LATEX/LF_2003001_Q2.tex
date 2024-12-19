@@ -1,0 +1,22 @@
+%2003001
+\documentclass[a4paper]{IEEEtran}
+\usepackage{tabularx}
+
+\begin{document}
+
+\begin{table}[!hbt]
+    This research work is focused on detecting low-grade glioma tumorous cells in MRI images. Glioma is a common brain tumor, that exhibits properties of benign tumors\cite{wadhwa2019review}. We used the TCGA-LGG Segmentation dataset\cite{buda2019association} for our research. It consists of 3929 brain tumor images and corresponding FLAIR abnormality segmentation masks obtained from 110 patients.
+\caption{Models used for U-Net encoder and trainable blocks/stages for finetuning}
+    
+    \begin{tabularx}{0.9\linewidth}\\
+    {X c >{\raggedleft\arraybackslash}X} % X is used to generate a flexible-width column (i.e., a column whose width is to be calculated automatically)
+    \hline {\bf Family} & {\bf Models} & {\bf Trainable Blocks}\\
+    \hline EfficientNet &  EfficientNetB0 to B7 & Block 30 to 32\\
+    DenseNet & DenseNet169, DenseNet201& Block 7\\
+    ResNet & ResNet18, ResNet50, ResNet101& Stage 4\\
+    \hline
+    \end{tabularx}
+\end{table}
+\bibliographystyle{IEEEtran} %plain/unsrt/alpha/abbrv/acm/apalike/apacite
+\bibliography{mybib}
+\end{document}

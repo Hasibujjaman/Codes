@@ -1,0 +1,92 @@
+%A math-mode environment, like equation(for single equation only) or enqarray, prints a mathematical expression in a new line.
+%A mathematical notation or expression, say amath, can be inserted in text mode evironment as $amath$, \(amath\), or \begin{math} amath \end{math}.
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+    \centering
+    {\Large\bf Brackets:}\\
+    The distributive property states that $a(b+c)=ab+ac$, for all $a, b, c \in \mathbb{R}$. \\[6pt]
+    The equivalence class of $a$ is $[a]$.\\[6pt]
+    The set $A$ is defined to be $\{1, 2, 3\}$.\\[6pt]
+    The movie ticket costs $\$11.50$. 
+
+    $$2\left(\frac{1}{x^2-1}\right)$$
+    $$2\left[\frac{1}{x^2-1}\right]$$
+    $$2\left\{\frac{1}{x^2-1}\right\}$$
+    $$2\left \langle      \frac{1}{x^2-1}\right \rangle      $$
+    $$2\left | \frac{1}{x^2-1}\right |      $$
+    $$\left.\frac{dy}{dx}\right|_{x=1}$$
+    $$\left( \frac{1}{1+\left(\frac{1}{1+x}\right)} \right)$$
+    \newpage
+ 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    %Some math mode environment
+    {\Large\bf Mathematical notation:}\\
+    \begin{equation} % for single equation
+         %1.prime
+         p'
+    \end{equation}
+
+    \begin{align}
+        \text{The whole environment is in mathmode}\nonumber \\
+        %2.dots
+        \dot{x}, \ddot{x}, \dddot{x}, \ddddot{x} x_i, x^2 \\
+        %3.Single sub-/super-script
+        x_{ij}, x^{2k}\\
+        %4.Multiple sub-/super-scripts
+        x^{2k}_{ij} or x_{ij}^{2k}\\
+        %5.Summation
+        \sum, \sum_{i=1}^{20} \label{sum1}\\
+        %6.Product
+        \prod, \prod_{i=1}^{i=20}\\
+        %7.Integration
+        \int x^2\,dx,\int_a^b xy\,dx \\
+        %8.Mutiple Integration
+        \iint\limits_s,\iiint\limits_v, \iiiint \\
+        %9.Set of integrations
+        \idotsint \\
+        %10.Cyclic integration
+        \oint \\
+        %11.Fraction
+        \frac{x}{y} \\
+        %12.Derivative
+        \nabla{f}, \frac{dx}{dy} \\
+        %13.Partial derivative
+        \frac{\partial{y}}{\partial{x}}\\
+        %14.Root
+        \sqrt{x}, \sqrt[5]{xyz} \\
+        %15.Limit
+        \lim_{x\to 0}, \underset{x\to 0}{\lim}\\
+        %16.Exists/not exists
+        \exists,\nexists \\
+        %17.Modes
+        \mod{n^2},\bmod{n^2},\pmod{n^2},\pod{n^2} \\
+        %18.Binomial expression
+        \binom{n}{k}
+    \end{align}
+    Eqn. \ref{sum1} is for Summation symbols.
+    \newpage
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    {\Large\bf Basic operators:}\\
+   \begin{eqnarray*}
+    \leq \\
+    \geq \\ 
+    \ll \\
+    \gg \\
+    \subset \\
+    \subseteq \\
+    \in \\
+    \not\in \\
+    \equiv \\
+    \sim \\
+    \approx \\
+    \neq \\
+    \propto \\
+    \not< \\
+    \not> 
+   \end{eqnarray*}
+
+\end{document}

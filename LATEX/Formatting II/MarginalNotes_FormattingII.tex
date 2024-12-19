@@ -1,0 +1,17 @@
+\documentclass[]{article}
+
+\marginparwidth = 12mm %the width of a marginal note , def = 35pt
+\marginparsep = 3mm %the horizontal gap between the main texts of a page and a marginal note, def = 10pt
+\marginparpush = 2mm %the vertical gap between two successive marginal notes, def = 7pt
+\begin{document}
+Although LATEX decides the correct margin on its own without bothering a user, a problem may arise if an arrow is to be used in the margin to
+point some texts. \marginpar{Marginal note} This is because, as shown in the margin of this line, a left-pointing arrow is required in the right margin and a right-pointing 
+one is required in the left margin. \marginpar[$\longrightarrow$]{$\longleftarrow$} However, it is not known beforehand in which margin the arrow will appear,
+for which it would be confusing whether a right-pointing or a left-pointing arrow is to be used.
+\end{document}
+
+
+
+
+
+
