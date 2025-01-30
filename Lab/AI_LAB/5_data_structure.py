@@ -83,4 +83,31 @@ def function(a, b):
 function("AI","everyone")
 
 
+print("\n\n\n")
+
+def func1(*args): # variable length arguments. args is a tuple
+    #print(args)
+    for arg in args:
+        print(arg)
+
+list1 = [1,2,3,4]
+tupple = (1, "EMon")
+dic1 = {"name":"Ali","age":25,"isStudent":True}
+func1(list1, tupple, dic1)
+
+
+print("\n\n\n")
+def func2(**args): # variable length keyword arguments. args is a dictionary
+        for key, value in args.items():
+            print(key, value)   
+
+func2(name="Ali", age=25, isStudent=True)
+
+
+print("\n\n\n")
+def func3(*args, **kwargs): # variable length arguments and keyword arguments
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(key, value)
 
