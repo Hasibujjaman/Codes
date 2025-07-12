@@ -32,6 +32,8 @@ public:
         vector<bool> visited(V, false);
         cout << "\nDepth-First Traversal (starting from vertex " <<0<< ") : "<<endl<<endl;
         DFS_Visit(startVertex, visited);
+        
+        //for visiting even the disconnected vertices of the graph
         for (int i = 0; i < V; i++) {
             if (!visited[i]) {
                 cout << "\n\nDepth-First Traversal (starting from vertex " <<i<< ") : "<<endl<<endl;

@@ -15,12 +15,12 @@ int main()
     }
     else if (pid == 0)
     { /* child process */
-        execlp("/bin/ls", "ls", NULL);
+        execlp("/bin/ls", "ls", NULL); 
     }
     else
     { /* parent process */
         /* parent will wait for the child to complete */ 
-        wait(NULL);
+        wait(NULL); // When a parent process calls wait(NULL), it waits for any one of its child processes to terminate, not all of them.
         printf("Child Complete\n");
     }
     return 0;
