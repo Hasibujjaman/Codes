@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper]{article}
+
+\begin{document}
+    \begin{tabbing}
+        Breadth (b)\hspace{.5cm} \= = 3.00\\
+        Depth (d) \> = 2.00\\
+        Height (h) \> = 4.00\\
+        Volume (V) \> = bdh \= = 24.00\\
+        Base Area (A) \> = bd \> = 6.00\\
+    \end{tabbing}
+    Here is another way to create column in tabbing environment using {\bf kill command}.\vspace{10mm}
+    \begin{tabbing}
+        Base Area (A) \= xx \= x\kill %this line just for creating the outline
+        Breadth (b)\hspace{.5cm} \> = 3.00\\
+        Depth (d) \> = 2.00\\
+        Height (h) \> = 4.00\\
+        Volume (V) \> = bdh \= = 24.00\\
+        Base Area (A) \> = bd \> = 6.00\\
+    \end{tabbing}
+
+\end{document}
+
+
+
+
+

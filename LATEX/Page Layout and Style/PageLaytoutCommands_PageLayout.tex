@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+% 1pt = .3515mm
+% values gotten from \layout command defined in the layout package.
+\voffset = 0pt %vertical coordinates of the reference point,
+\hoffset = 0pt %the horizontal coordinates of the reference point,
+%
+\paperwidth = 210mm % a4 
+\paperheight = 297mm % a4
+\textheight = 50mm %Height of main texts without header and footer. Not default
+\textwidth = 100mm %Width of main texts without marginal notes. Not default
+%Header related parameters , set with def values 
+\topmargin = 20pt %Extra vertical space above the header.
+\headheight = 12pt %Height of header
+\headsep = 25pt %Vertical gap between the header and the first line of the main texts.
+%Footer related
+\footskip = 30pt %Vertical gap between the last line of the main texts and the footer.
+%Multiple Column related
+% \columnseprule = 1mm %default value is 0mm i.e, invisible
+% \columnsep = 10mm % default = 3.5 mm , specifies the gap between two columns
+% \multicolsep = 20mm % default = 4.5 mm , controls the vertical gap before and after the environment
+% \columnwidth is automatically calculated \textwidth and \columnsep
+%Marginal Notes
+% \marginparwidth = 35pt %the width of a marginal note , def = 35pt
+% \marginparsep = 10pt %the horizontal gap between the main texts of a page and a marginal note, def = 10pt
+% \marginparpush = 7pt %the vertical gap between two successive marginal notes, def = 7pt
+
+
+\begin{document}
+\centering %center alignment
+
+Text Area is Shown Beelow
+\rule{\textwidth}{\textheight}
+
+Line Width
+\rule{\linewidth}{1pt} %creates a horizontal rule (line) that spans the entire width of the line.
+\\[20pt]
+Text Width
+\rule{\textwidth}{1pt}
+
+
+\newpage
+\Large
+All the standard papers listed in Table 5.1 have some fixed values for the commands controlling the dimensional parameters of a page layout. 
+Even for the same paper, the value of a command may vary with the size of fonts as well as with the type of printing (single-side or both-side). 
+However, the values of these commands are independent of the three standard document-classes of article, book, and report. For a particular setting, 
+the page layout similar to the one shown in Fig. 5.1, along with the values of some parameter controlling commands, can be obtained through the 
+/layout command defined in the layout package
+\end{document}
+
+
+
+
+
+

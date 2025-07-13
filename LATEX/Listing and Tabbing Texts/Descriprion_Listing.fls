@@ -1,0 +1,34 @@
+PWD /Users/emonchowdhury/Library/CloudStorage/GoogleDrive-emonahamed789@gmail.com/My Drive/Codes/ VS Code/LATEX/Listing and Tabbing Texts
+INPUT /Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT /Users/emonchowdhury/Library/CloudStorage/GoogleDrive-emonahamed789@gmail.com/My Drive/Codes/ VS Code/LATEX/Listing and Tabbing Texts/Descriprion_Listing.tex
+OUTPUT Descriprion_Listing.log
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/size11.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./Descriprion_Listing.aux
+INPUT ./Descriprion_Listing.aux
+INPUT Descriprion_Listing.aux
+OUTPUT Descriprion_Listing.aux
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
+OUTPUT Descriprion_Listing.pdf
+INPUT /Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT Descriprion_Listing.aux
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb

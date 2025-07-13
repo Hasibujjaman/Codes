@@ -1,0 +1,32 @@
+\documentclass{report}
+%article and report offer plain style by default. i.e, The head is empty, but the foot contains the page number at the center of the foot
+
+%change style
+%\pagestyle{empty}
+%\pagestyle{headings} %with oneside printing option, Title of chapter on left and page number on right for both odd and even pages
+                     %with twoside printing option, on odd pages(right hand pages), Title of section on left and page number on right 
+                                                    %on even pages(left hand pages), Title of chapter on right and page number on left
+
+\begin{document}
+
+    \chapter{First Chapter}
+    {\huge\em Article and report offer plain style by default. i.e, The head is empty, but the foot contains the page number at the center of the foot }
+	\section{First Section}
+	\bfseries\huge (article class do not support  chapter section) \normalfont\normalsize The start of section one.
+	\subsection{First subsection}
+	The start of sub-section one.
+	\subsubsection{First sub-sub-section}
+	The start of sub-sub-section one. Sub-sub-sections are numbered in case of {\bf\Huge book and report} class.
+	\newpage
+	.......
+    \newpage
+    \section{2nd Section}
+    ............
+    \newpage
+    \chapter{2nd Chapter}
+    Start of chapter 2
+    \section{Section 1}
+    ....
+    \newpage
+    ....
+\end{document}

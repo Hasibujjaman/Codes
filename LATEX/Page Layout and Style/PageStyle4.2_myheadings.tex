@@ -1,0 +1,26 @@
+\documentclass{article}
+%article and report offer plain style by default. i.e, The head is empty, but the foot contains the page number at the center of the foot
+
+%define myheadings style
+%a user defined style which is the same as headings syle
+\pagestyle{myheadings}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection. #1}{ }} 
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection. #1}}
+
+
+\begin{document}
+	\section{First Section}
+	\bfseries\huge (article class do not support  chapter section) \normalfont\normalsize The start of section one.
+	\subsection{First subsection}
+	The start of sub-section one.
+	\subsubsection{First sub-sub-section}
+	The start of sub-sub-section one. Sub-sub-sections are numbered in case of {\bf\Huge book and report} class.
+	\newpage
+	.......
+    \newpage
+    \section{2nd Section}
+    ............
+    \newpage
+    ....
+	fsldkdsadafdfvvvcffcc
+\end{document}

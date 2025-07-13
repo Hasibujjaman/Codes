@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title> First App</title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of the First App</p>
+    <h1> <b> {{key1}} </b> </h1> 
+    {% comment %} using if else statement {% endcomment %}
+    {%if key1%}
+        <h1> <b> {{key1}} </b> </h1>
+    {%else%}    
+        <h1> <b> {{key2}} </b> </h1>
+    {%endif%}
+    
+</body>
+
+</html>

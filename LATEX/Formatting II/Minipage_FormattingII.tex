@@ -1,0 +1,18 @@
+\documentclass[11pt,a4paper]{article} 
+
+\usepackage{boxedminipage} % for boxedminipage envoironment
+%
+\begin{document}
+	%
+	\begin{minipage}[t]{0.6\linewidth} %the width of a mini page may be specified as a fraction of the \linewidth command, say ‘0.4\linewidth’ to create a mini page of width equal to 40 % of the line width of the main page
+		This minipage is top- aligned and its horizon- tal width is 5.0 cm.
+		
+		\bfseries\large The horizontal width, the sum of widths of all the side-by-side mini pages should not exceed the line width of the main page, otherwise the excess mini pages will be placed in the following lines
+		 \end{minipage}
+	%
+	\begin{boxedminipage}[t]{0.4\linewidth}
+		This boxed-minipage is also ... 
+		
+		\end{boxedminipage}
+	%
+\end{document}

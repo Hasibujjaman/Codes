@@ -1,0 +1,54 @@
+\documentclass[]{book} %it is set as default that a chapter starts on right page . to change this pass openany to the additional argument of \documentclass[here]{}
+%book offers headings styte by default. i.e, it offers page numbering and chapter\section name in the header of every page excecpt the beginnig of a chapter\section page which has only the page number in the footer
+
+%choosing the style comes first . otherwise it won't work
+\pagestyle{myheadings} 
+%define myheadings style
+%a user defined style which is the same as headings syle
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter.#1}{ }}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.#1}}
+%another style
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{(Emon) \thechapter. #1}}{ }}
+\renewcommand{\sectionmark}[1]{\markright{\it\large (Chowdhury) \thesection.#1}{ }}
+
+
+
+\begin{document}
+\chapter*{Preface}
+{\Huge books class document comes with twoside printing option as default. \bf while others don't}
+
+\chapter{First Chapter}
+%\thispagestyle{empty} %to locally appy empty style in a particular page
+{\huge\bf myheadings style is user defined. It works by redefining /chaptermark, /sectionmark, and /subsectionmark with the help of /renewcommand{ }[ ]{ } command.}
+	The beginnig of first chapter.
+		\section{First Section}
+		The start of section one.
+			\subsection{First subsection}
+			The start of sub-section one.
+				\subsubsection{First sub-sub-section}
+					The start of sub-sub-section one. Sub-sub-sections are {\bf\Huge not} numbered in case of {\bf\huge article} class.
+					\newpage
+					....
+                    \newpage
+                    =====
+\chapter{Running Header and Footer}
+\bfseries\large
+By default, /thispagestyle{plain} is issued by the document-classes of article, book, and report to the 
+/maketitle command and the first page of major sectioning commands,like /part{ } or /chapter{ }. 
+To suppress the effect of /thispagestyle{plain} on these pages, /thispagestyle{ } with an appropriate
+ page style may be used just after the /maketitle, /part{ } or /chapter{ } command, 
+ e.g., /thispagestyle{empty} may be used to suppress the default page numbering on these pages.
+    \section{1st Section}
+    .....
+    \newpage
+    .....
+    \newpage
+    \section{2nd Section}
+    .........
+    \newpage
+    ....
+    \chapter{3rd Chapter}
+    ....
+    \newpage
+    -----
+\end{document}

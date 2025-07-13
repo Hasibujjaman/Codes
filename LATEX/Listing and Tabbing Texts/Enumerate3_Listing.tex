@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{enumerate} %for using /begin{}[]
+%
+\begin{document}
+To get different local effects in different enumerate environments, the commands should be redefined repeatedly before starting every enumerate environment. However, it may not always be convenient to redefine the commands every time, particularly when two or more environments are nested one inside another. Such drawbacks can be overcome through the enumerate package, which redefines the enumerate environment with an optional argument for specifying its numbering style2, e.g., /begin{enumerate}[Note 1] for numbering the items of the environment as Note 1, Note 2,etc. The tokens 1, i, I, a and A are reserved for indicating a numbering style.\\[10mm]
+e.g., /begin{enumerate}[Note 1] for numbering the items of the environment as Note 1, Note 2,etc. \bfseries The tokens 1, i, I, a and A \normalfont are reserved for indicating a numbering style. If any of these five tokens appears in the fixed texts of the optional field, it is to be protected by writing it in { }.
+\vspace{20mm}
+
+    \begin{center}{\bf EXAMPLES}\end{center}
+    \begin{enumerate}[{\bf Ex{a}mple 1:}] 
+        \item Show that…
+        \item Prove that…\label{item:ex_gr}
+        \item What would be…
+    \end{enumerate}
+    %
+    \begin{center}{\bf PROBLEMS}\end{center}
+    %for indentation use \hspace in the optional argument
+    \begin{enumerate}[{\bf\hspace{30mm} Problem (a):}]
+        \item Prove that…\label{item:pr_gr}
+        \item Show that…
+        \item What would be…
+    \end{enumerate}
+    %
+    The problem (\ref{item:pr_gr}) is just an
+    extension of the example \ref{item:ex_gr}.
+\end{document}

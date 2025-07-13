@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title> Home </title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of the main app</p>
+    <h2> Here are data that we got from the Django/DB: </h2>
+    <div> Name: {{ name }} </div>
+    <div>    Age:  {{ age }} </div>
+    <div> Country: {{ country }} </div>
+    <div> Relatives: {{ relatives }} </div>
+
+    <br/>
+
+    {% comment %} for loop examples: {% endcomment %}
+    {%for data in relatives%}
+        <div>
+            {{forloop.counter}}. {{data}}
+        </div>
+    {%endfor%}
+    <br/>
+    <table border = "1" cellpadding = "10" >
+        <tr>
+            <th> Name </th>
+            <th> Phone </th>
+        </tr>
+        {% for data in contacts %}
+            <tr>
+                <td>{{ data.name }}</td>
+                <td> {{data.phone}} </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+    <br/>
+
+    {% comment %} if else example: {% endcomment %}
+     {% if numbers|length > 0 %}  {% comment %} if the number list is not empty {% endcomment %}
+        <h2> Here are the numbers that are greater than 5: </h2>
+        <ul>
+            {% for num in numbers %}
+                {% if num > 5 %}
+                <div> {{ num }} </div>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2> There is no number in the number list </h2>
+    {% endif %}
+    
+
+
+
+</body>
+</html

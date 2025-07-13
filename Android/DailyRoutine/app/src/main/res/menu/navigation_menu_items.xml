@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/itemSat"
+        android:title="Saturday"
+        android:icon="@drawable/sat"/>
+    <item
+        android:id="@+id/itemSun"
+        android:title="Sunday"
+        android:icon="@drawable/sun"/>
+    <item
+        android:id="@+id/itemMon"
+        android:title="Monday"
+        android:icon="@drawable/mon"/>
+    <item
+        android:id="@+id/itemTue"
+        android:title="Tuesday"
+        android:icon="@drawable/tue"/>
+    <item
+        android:id="@+id/itemWed"
+        android:title="Wednesday"
+        android:icon="@drawable/wed"/>
+    <item
+        android:id="@+id/itemThu"
+        android:title="Thursday"
+        android:icon="@drawable/thu"/>
+    <item
+        android:id="@+id/itemFri"
+        android:title="Friday"
+        android:icon="@drawable/fri"/>
+
+
+
+</menu>

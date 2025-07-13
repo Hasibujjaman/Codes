@@ -1,0 +1,96 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.23)  27 NOV 2023 14:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./MultipleColumns_FormattingII.tex
+(MultipleColumns_FormattingII.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@chapter=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+) (MultipleColumns_FormattingII.aux)
+\openout1 = `MultipleColumns_FormattingII.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+Unit A.
+
+Underfull \hbox (badness 2884) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/24.88 Beginning of a the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+[1{/Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/fonts/ma
+p/pdftex/pdftex.map}
+
+
+] (MultipleColumns_FormattingII.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 466 strings out of 476503
+ 9401 string characters out of 5795755
+ 1926555 words of memory out of 5000000
+ 22484 multiletter control sequences out of 15000+600000
+ 561173 words of font info for 46 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 35i,5n,50p,181b,147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/emonchowdhury/Library/Application Support/MiKTeX/texmfs/data/fonts/p
+k/ljfour/jknappen/ec/dpi600/tcbx1200.pk> </Users/emonchowdhury/Library/Applicat
+ion Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk><
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install
+/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on MultipleColumns_FormattingII.pdf (1 page, 39779 bytes).
+PDF statistics:
+ 31 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

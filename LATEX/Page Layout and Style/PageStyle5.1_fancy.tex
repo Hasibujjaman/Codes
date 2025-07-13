@@ -1,0 +1,62 @@
+\documentclass[a4paper,twoside]{book}
+\usepackage{fancyheadings}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection. #1}}
+
+\rhead[\textbf{\leftmark}]{\textbf{\thepage}} % optional argument becomes active only if twoside printing is opted
+\lhead[\textbf{\thepage}]{\textbf{\rightmark}}
+\rfoot[]{\textbf{Dilip Datta}}
+\lfoot[\textbf{Engineering Mechanics}]{}
+\cfoot[]{}
+\renewcommand{\headrulewidth}{0.15mm}
+\renewcommand{\footrulewidth}{0.15mm}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+%
+\begin{document}
+ ...
+ \chapter*{Preface}
+ \huge 
+ The page style fancy, 
+ defined in the fancyheadings package, allows very elegant customization of the running header 
+ and footer of a document. 
+ The package provides three types of headers as well as footers, through which a header/footer can be made page-wise left, center or right aligned, 
+ or even multiple pieces of headers and footers can be used. 
+ The commands for such headers and footers are shown in Table 5.7, where podd and peven are the contents of the headers/footers on odd and
+ 
+ \chapter{First Chapter}
+ %\thispagestyle{empty} %to locally appy empty style in a particular page
+     The beginnig of first chapter.
+         \section{First Section}
+         The start of section one.
+             \subsection{First subsection}
+             The start of sub-section one.
+                 \subsubsection{First sub-sub-section}
+                     The start of sub-sub-section one. Sub-sub-sections are {\bf\Huge not} numbered in case of {\bf\huge article} class.
+                     \newpage
+                     ....
+                     \newpage
+                     =====
+ \chapter{Running Header and Footer}
+ \bfseries\large
+ By default, /thispagestyle{plain} is issued by the document-classes of article, book, and report to the 
+ /maketitle command and the first page of major sectioning commands,like /part{ } or /chapter{ }. 
+ To suppress the effect of /thispagestyle{plain} on these pages, /thispagestyle{ } with an appropriate
+  page style may be used just after the /maketitle, /part{ } or /chapter{ } command, 
+  e.g., /thispagestyle{empty} may be used to suppress the default page numbering on these pages.
+     \section{1st Section}
+     .....
+     \newpage
+     .....
+     \newpage
+     \section{2nd Section}
+     .........
+     \newpage
+     ....
+     \chapter{3rd Chapter}
+     ....
+     \newpage
+        ---
+\end{document}

@@ -1,0 +1,7 @@
+,Name,Age,Income,IsStudent,Buy,Salary($)
+1,Jamal,25,LOW,False,False,2000
+2,Damal,30,HIGH,False,True,10
+3,Pamal,40,MODERATE,False,False,0
+4,Somal,50,MODERATE,False,False,300
+5,Tomal,60,LOW,False,False,40
+6,Zomal,15,HIGH,True,True,3000

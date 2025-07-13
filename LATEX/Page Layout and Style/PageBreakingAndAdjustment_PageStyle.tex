@@ -1,0 +1,16 @@
+\documentclass[twoside,a4paper]{article}
+
+%text adjustment
+\raggedbottom % default, except under the twoside option 
+\flushbottom %makes all pages of the same height adding extra vertical space, if required
+
+
+\begin{document}
+\Huge
+The {\bf /raggedbottom} declaration in the preamble puts texts from the top of a page, leaving extra space at the bottom if no material is available to put in that limited space.\newpage
+The {\bf /raggedbottom} declaration is default, except under the twoside option to /documentclass[ ]{ }. \pagebreak In contrary, the {\bf /flushbottom} declaration makes all pages of the same\clearpage
+height adding extra vertical space, if required. Even when /flushbottom is in effect, /newpage may be used to produce a shortened page (i.e., like /raggedbottom page).\newpage
+.........\cleardoublepage
+Odd(Right) page start here.
+
+\end{document}

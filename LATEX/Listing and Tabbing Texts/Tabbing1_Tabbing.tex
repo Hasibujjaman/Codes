@@ -1,0 +1,22 @@
+\documentclass[11pt,a4paper]{article}
+
+\begin{document}
+    {\bf The tabbing environment is used for aligning texts in different columns}.
+    \vspace{5mm}\huge
+
+    one $\backslash$= command separates two columns.
+
+    The row is terminated by $\backslash$$\backslash$.
+
+    The remaining rows are inserted in the same way, but replacing $\backslash$= with $\backslash$$\backslash$.
+
+    \huge\vspace{20mm}
+    \begin{tabbing} 
+        Potato \= 12.00\\ %The \= command is used, usually in the first row, to generate a new column by ending the current column
+        Rice \> 20.00\\  %The \> command moves the control to the next column in the subsequent rows
+        Oil \> 60.00\\ % Each row is terminated by a line break command \\ to go to the next row
+        Sugar \> 23.00  %the last row is not required to be terminated by \\
+    \end{tabbing}
+
+
+\end{document}

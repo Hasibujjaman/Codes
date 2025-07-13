@@ -1,0 +1,27 @@
+\documentclass[openany]{book}
+%it is set as default that a chapter starts on right page . to change this pass openany to the additional argument of \documentclass[here]{}
+
+
+\begin{document}
+\chapter{First Chapter}
+	The beginnig of first chapter.
+		\section{First Section}
+		The start of section one.
+			\subsection{First subsection}
+			The start of sub-section one.
+				\subsubsection{First sub-sub-section}
+					The start of sub-sub-section one. Sub-sub-sections are {\bf\Huge not} numbered in case of {\bf\huge article} class.
+					\newpage
+					....
+\chapter{Running Header and Footer}
+\bfseries\large
+By default, /thispagestyle{plain} is issued by the document-classes of article, book, and report to the 
+/maketitle command and the first page of major sectioning commands,like /part{ } or /chapter{ }. 
+To suppress the effect of /thispagestyle{plain} on these pages, /thispagestyle{ } with an appropriate
+ page style may be used just after the /maketitle, /part{ } or /chapter{ } command, 
+ e.g., /thispagestyle{empty} may be used to suppress the default page numbering on these pages.
+    \section{First Section}
+    .....
+    \newpage
+    .....
+\end{document}

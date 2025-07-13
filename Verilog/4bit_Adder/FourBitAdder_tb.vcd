@@ -1,0 +1,154 @@
+$date
+	Sat May  4 12:35:03 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module FourBitAdder_tb $end
+$var wire 4 ! Sum [3:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 # SIM_TIME $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$var reg 1 & Cin $end
+$scope module UUT $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 & Cin $end
+$var wire 4 ) carry [3:0] $end
+$var wire 4 * Sum [3:0] $end
+$var wire 1 " Cout $end
+$scope module FA0 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 & Cin $end
+$var wire 1 - Sum $end
+$var wire 1 . Cout $end
+$upscope $end
+$scope module FA1 $end
+$var wire 1 / A $end
+$var wire 1 0 B $end
+$var wire 1 1 Cin $end
+$var wire 1 2 Sum $end
+$var wire 1 3 Cout $end
+$upscope $end
+$scope module FA2 $end
+$var wire 1 4 A $end
+$var wire 1 5 B $end
+$var wire 1 6 Cin $end
+$var wire 1 7 Sum $end
+$var wire 1 8 Cout $end
+$upscope $end
+$scope module FA3 $end
+$var wire 1 9 A $end
+$var wire 1 : B $end
+$var wire 1 ; Cin $end
+$var wire 1 < Sum $end
+$var wire 1 " Cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1100100 #
+$end
+#0
+$dumpvars
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+b0 *
+bz000 )
+b0 (
+b0 '
+0&
+b0 %
+b0 $
+0"
+b0 !
+$end
+#10000
+b10 !
+b10 *
+12
+11
+bz001 )
+1.
+1,
+1+
+b1 %
+b1 (
+b1 $
+b1 '
+#20000
+b100 !
+b100 *
+17
+02
+16
+01
+bz010 )
+0.
+13
+0,
+10
+0+
+1/
+b10 %
+b10 (
+b10 $
+b10 '
+#30000
+b1000 !
+b1000 *
+1<
+07
+1;
+06
+bz100 )
+03
+18
+00
+15
+0/
+14
+b100 %
+b100 (
+b100 $
+b100 '
+#40000
+b0 !
+b0 *
+0<
+0;
+bz000 )
+08
+1"
+05
+1:
+04
+19
+b1000 %
+b1000 (
+b1000 $
+b1000 '
+#50000

@@ -1,0 +1,58 @@
+%drwaing lines and vectors
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\begin{document}
+\noindent
+%\begin{picture}(lx,ly)(x0,y0),where(x0,y0) is the lower left coordinate of the window, and lx and ly are its lengths along the x- and y- axes, respectively
+    This is a line before the figure\\
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(60,30)(0,0)
+        \thinlines %def
+        \put(0,0){\line(0,1){30}} % \put(x,y){fcmd} command to start the figure at (x,y).
+        \put(5,0){\line(1,0){55}}
+        \put(45,25){\line(1,-1){15}}
+    \end{picture}\\
+    End of figure\\[2cm]
+
+    \setlength{\unitlength}{1mm}
+    This is a line before the figure\\
+    \begin{figure}[!htb]
+        \centering
+        \caption{y = x}
+        \label{line_1}
+        \begin{picture}(60,30)(-30,-15)
+            \thicklines
+            \put(0,0){\vector(1,0){30}}
+            \put(0,0){\vector(-1,0){30}}
+            \put(0,0){\vector(0,1){15}}
+            \put(0,0){\vector(0,-1){15}}
+            \put(-30,-15){\line(1,0){60}}
+            \put(-30,-15){\line(0,1){30}}
+            \put(-30,15){\line(1,0){60}}
+            \put(30,15){\line(0,-1){30}}
+            \put(0,0){\line(1,1){10}} % \put(x,y){fcmd} command to start the figure at (x,y).
+        \end{picture} 
+    \end{figure}
+
+    Here ends a figure\\[10mm]
+
+    \begin{picture}(120,60)(0,0)
+        \thicklines
+        \put(5,5){\vector(1,2){20}}
+        \put(75,15){\vector(-1,0){50}}
+        \put(115,55){\vector(-1,-2){25}}
+        \end{picture}
+
+    Here ends a figure\\[10mm]
+
+    \setlength{\unitlength}{2mm}
+    \begin{picture}(60,30)(0,0)
+        \linethickness{2mm}
+        \multiput(5,5)(5,10){3}{\line(1,0){20}} %The \multiput(x,y)(delx,dely){n}{fcmd} command can also be used for draw- ing the same figure n times, starting the first one at (x,y) and incrementing (x,y) each time by (delx,dely) for the subsequent figures 
+        \multiput(40,5)(7,2){3}{\vector(1,2){10}}
+    \end{picture}
+
+    Here ends a figure\\[10mm]
+
+\end{document}

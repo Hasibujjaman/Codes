@@ -1,0 +1,142 @@
+{% comment %} home.html {% endcomment %}
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="{% static 'MusicRecom/favicon.ico' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Match | Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <style>
+        .theme-light {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .theme-dark {
+            background-color: #212529;
+            color: #f8f9fa;
+        }
+
+        .theme-colorful {
+            background-color: #1db954;
+            color: #ffffff;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .header-stylish {
+        font-family: 'Pacifico', cursive;
+    }
+    </style>
+</head>
+<body class="theme-light">
+    <header class="py-3 bg-primary text-white text-center">
+        {% comment %} <h1 class="display-5">Melody Match</h1> {% endcomment %}
+         <h1 class="display-5 header-stylish">Melody Match</h1>    
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    {% if request.session.user_id %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+                        <span class="navbar-text ms-2">{{ request.session.user_name }}</span>
+                    {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Log in</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">Register</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Select a Song</h2>
+            <button class="btn btn-outline-secondary" id="theme-toggle">Switch Theme</button>
+        </div>
+
+        <form method="POST" id="song-form">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="music" class="form-label">Choose a song:</label>
+                <select name="selected_song" class="form-select">
+                    <option value="">--Select a song--</option>
+                    {% for song in music_list %}
+                        <option value="{{ song }}" {% if song == selected_music %}selected{% endif %}>{{ song }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" name="action" value="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" name="action" value="refresh" class="btn btn-success" >Refresh Recommendations</button>
+            {% comment %} <input type="submit" name="action" value="refresh" class="btn btn-success"> {% endcomment %}
+        </form>
+
+        
+    </div>
+
+    <div class="container">
+        <div class="row gy-4" id="recommendations">
+            {% for music_name, music_artist, music_poster, music_album, music_popularity, music_preview, spotify_url in recommended_music %}
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="{{ music_poster }}" class="card-img-top" alt="Image not found">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ music_name }}</h5>
+                            <p class="card-text"><strong>Artist:</strong> {{ music_artist }}</p>
+                            <p class="card-text"><strong>Album:</strong> {{ music_album }}</p>
+                            <p class="card-text"><strong>Popularity:</strong> {{ music_popularity }}</p>
+                            <audio controls class="w-100">
+                                <source src="{{ music_preview }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{{ spotify_url }}" class="btn btn-success w-100">Link to Spotify</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <p class="text-center">No recommendations available at the moment.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 Melody Match </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const body = document.body;
+        const themeToggle = document.getElementById('theme-toggle');
+        const themes = ['theme-light', 'theme-dark', 'theme-colorful'];
+        let currentThemeIndex = 0;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.remove(themes[currentThemeIndex]);
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            body.classList.add(themes[currentThemeIndex]);
+        });
+
+        document.getElementById('refresh-recommendations').addEventListener('click', () => {
+            document.getElementById('song-form').submit();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+TITLE Experiment_no 5: PROG_1
+.MODEL SMALL
+.STACK 100H
+.DATA
+MSG1 DB "ENTER A NUMBER: $"
+MSG2 DB " IS EVEN $"
+MSG3 DB " IS ODD $"
+BYTE1 DB ?
+
+.CODE
+MAIN PROC
+    MOV AX,@DATA
+    MOV DS,AX
+    ;PROMPT
+    LEA DX,MSG1
+    MOV AH,9
+    INT 21H
+    ;INPUT
+    MOV AH,1
+    INT 21H
+    MOV BYTE1,AL
+    ;NEW LINE
+    MOV AH,2
+    MOV DL,0AH
+    INT 21H
+    MOV DL,0DH
+    INT 21H
+    ;CHECK FOR EVEN NUMBER
+    MOV BL,BYTE1
+    AND BL,1 
+
+    JZ LABEL_EVEN
+
+    ;INPUT IS ODD HERE
+    MOV AH,2
+    MOV DL,BYTE1
+    INT 21H
+    
+    LEA DX,MSG3
+    MOV AH,9
+    INT 21H
+
+    JMP DONE
+
+    LABEL_EVEN:
+    ;
+    MOV AH,2
+    MOV DL,BYTE1
+    INT 21H
+    
+    LEA DX,MSG2
+    MOV AH,9
+    INT 21H
+
+    DONE:
+    MAIN ENDP
+    END MAIN

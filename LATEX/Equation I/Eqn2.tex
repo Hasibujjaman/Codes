@@ -1,0 +1,33 @@
+%Array of equations
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+\begin{gather}
+    5x+ 2y = x+ 2z+ 3\\
+    130x+ 4z = y+ 2\\
+    43y+ 57z = 20x+99
+\end{gather}
+\begin{eqnarray}
+    5x+2y   &=& x+2z+3 \label{eqn1}\\ 
+    130x+4z &=& y+2 \nonumber \\
+    43y+57z &=& 20x+99 \label{eqn3}
+\end{eqnarray}
+\begin{align}
+    5x+2y &= x+2z+3 \tag{See \eqref{eqn1}}\\ 
+    130x+4z &= y+2 \label{align2}\\[3mm] 
+    43y+57z &= 20x+99 \notag
+\end{align}
+\begin{alignat*}{7}
+    5x&+& 2y&& &=& x&+& && 2z&+& 3\\
+    \intertext{Please notice the alignment ...} 
+    130x&+& && 4z &=& && y&+& && 2\\
+        && 43y&+& 57z &=& 20x&+& && && 99 
+\end{alignat*}
+\begin{xxalignat}{7}
+    5x&+& 2y&& &=& x&+& && 2z&+& 3\\
+    130x&+& && 4z &=& && y&+& && 2\\ 
+        && 43y&+& 57z &=& 20x&+& && && 99
+\end{xxalignat}
+
+\end{document}

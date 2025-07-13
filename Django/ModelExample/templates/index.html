@@ -1,0 +1,175 @@
+{% extends "base.html" %} 
+ 
+
+
+
+{% block content %}
+
+<body>
+<!-- Marquee starts -->
+  {% comment %} <marquee bgcolor= "yellow" style="position: absolute; top: 100px; left: 50px; width: 100%;  color: red; font-size: 20px; ">Welcome to the Bookmark App</marquee> {% endcomment %}
+  <marquee class="marquee" scrollamount="10" onmouseover="stop()" onmouseout="start()"> 
+  <b style="color: white"> Updates: </b> &nbsp;&nbsp;&nbsp;
+  {% for mData in marqueeData %}
+    <a href="/details/{{mData.service_slug}}" target="_blank" style="color: white; text-decoration: none;">{{mData.service_title}}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  {% endfor %}
+  </marquee>
+<!-- Marquee ends-->
+
+<!-- Search bar starts -->
+<div class="container-search">
+<form method = "GET">
+  <div class="search-bar">
+    <input type="text" name="search" placeholder="Enter service title">
+    <button type="submit">Search</button>
+  </div>
+</form>
+</div>
+<!-- Search bar ends -->
+
+<!-- home section stars -->
+{% for sData in servicesData %}
+
+  <section class="home" id="home">
+    <div class="content">
+      <h1>{{sData.service_title}}</h1>
+      <p>
+        {{sData.service_description|safe}}  <!-- safe filter is used to render html content -->
+      </p>
+
+      <a href="#" class="home-btn">get it on chrome</a>
+    </div>
+
+    <div class="image">
+        
+      <img src="/media/{{sData.service_file}}" alt="static/images/illustration-hero.svg" />
+    </div>
+
+  </section>
+  {% empty %}
+  <section class="home" id="home">
+    <div class="content">
+      <p>
+        <h1>No data found</h1>
+      </p>
+    </div>
+  </section>
+ 
+{% endfor %}
+<!-- home section ends -->
+
+<!-- features sectin starts  -->
+  <section class="features" id="features">
+    <div class="heading">
+      <h1>Features</h1>
+      <p>
+        Our aim is to make it quick and easy for you to access your favorite
+        websites. your bookmarks sync between your devices so you can access
+        them on the go
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- 1 Tab  -->
+      <div class="image">
+        <img
+          src="static/images/illustration-features-tab-1.svg"
+          alt="illustration-features-tab-1"
+        />
+      </div>
+
+      <div class="content">
+        <h1>Bookmark in one click</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sint
+          odit tempora, maiores quos qui quisquam accusamus ad officiis
+          sapiente.
+        </p>
+        <a href="#" class="all-btn">more info</a>
+      </div>
+
+      <!-- 1 Tab  -->
+
+      <!-- 2 Tab  -->
+      <div class="content">
+        <h1>Intelligent search</h1>
+        <p>
+          Our powerful search feature will help you find saved sites in no time
+          at all. No need to trawl through all of your bookmarks.
+        </p>
+        <a href="#" class="all-btn">more info</a>
+      </div>
+
+      <div class="image">
+        <img
+          src="static/images/illustration-features-tab-2.svg"
+          alt="illustration-features-tab-2"
+        />
+      </div>
+
+      <!-- 2 Tab  -->
+
+      <div class="image">
+        <img
+          src="static/images/illustration-features-tab-3.svg"
+          alt="illustration-features-tab-3"
+        />
+      </div>
+
+      <div class="content">
+        <h1>Share your bookmarks</h1>
+        <p>
+          Easily share your bookmarks and collections with others. Create a
+          shareable link that you can send at the click of a button.
+        </p>
+        <a href="#" class="all-btn">more info</a>
+      </div>
+
+      <!-- 3 Tab  -->
+    </div>
+  </section>
+
+<!-- features sectin ends -->
+
+<!-- downloads section starts  -->
+  <section class="download" id="download">
+    <div class="heading">
+      <h1>Download Extension</h1>
+      <p>
+        We've got more browsers in the pipeline. Please do le us know if you
+        got've got a favorite you'd like us to prioritize
+      </p>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="static/images/logo-chrome.svg" alt="logo-chrome" />
+
+        <h3>Add to Chrome</h3>
+        <p>Minimum Version 63</p>
+        <a href="#" class="all-btn">install</a>
+      </div>
+
+      <div class="box">
+        <img src="static/images/logo-firefox.svg" alt="logo-firefox" />
+
+        <h3>Add to Firefox</h3>
+        <p>Minimum Version 55</p>
+        <a href="#" class="all-btn">install</a>
+      </div>
+
+      <div class="box">
+        <img src="static/images/logo-opera.svg" alt="logo-opera" />
+
+        <h3>Add to Opera</h3>
+        <p>Minimum Version 46</p>
+        <a href="#" class="all-btn">install</a>
+      </div>
+    </div>
+  </section>
+<!-- downloads section ends -->
+
+  <script src="static/js/main.js"></script>
+</body>
+
+{% endblock content %}

@@ -1,0 +1,43 @@
+\documentclass[openany]{book} %it is set as default that a chapter starts on right page . to change this pass openany to the additional argument of \documentclass[here]{}
+%book offers headings styte by default. i.e, it offers page numbering and chapter\section name in the header of every page excecpt the beginnig of a chapter\section page which has only the page number in the footer
+
+%\pagestyle{empty} %globally applies empty style which makes both the head and foot empty, so there is no page numbering.
+%however at beginnig page of a chapter , there will be page number. you have to turn it off forcefully in every charper locally
+
+
+\begin{document}
+\chapter*{Preface}
+{\Huge books class document comes with twoside printing option as default. \bf while others don't}
+
+\chapter{First Chapter}
+%\thispagestyle{empty} %to locally appy empty style in a particular page
+{\large\bf Both the head and foot are empty, and there is no page num- ber (however, the pages are counted).
+To forcefully turn off page number showing in the chapter beginnig page , use /thispagestyle{empty} in that page.}
+	The beginnig of first chapter.
+		\section{First Section}
+		The start of section one.
+			\subsection{First subsection}
+			The start of sub-section one.
+				\subsubsection{First sub-sub-section}
+					The start of sub-sub-section one. Sub-sub-sections are {\bf\Huge not} numbered in case of {\bf\huge article} class.
+					\newpage
+					....
+\chapter{Running Header and Footer}
+\bfseries\large
+By default, /thispagestyle{plain} is issued by the document-classes of article, book, and report to the 
+/maketitle command and the first page of major sectioning commands,like /part{ } or /chapter{ }. 
+To suppress the effect of /thispagestyle{plain} on these pages, /thispagestyle{ } with an appropriate
+ page style may be used just after the /maketitle, /part{ } or /chapter{ } command, 
+ e.g., /thispagestyle{empty} may be used to suppress the default page numbering on these pages.
+    \section{1st Section}
+    .....
+    \newpage
+    .....
+    \newpage
+    \section{2nd Section}
+    .........
+    \newpage
+    ....
+    \chapter{3rd Chapter}
+    ....
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\begin{document}
+    \vspace{\fill}
+
+A numbered list:
+    \begin{enumerate}
+        \item Emon
+        \item Taki
+        \item Roll 3
+    \end{enumerate}
+
+    \vspace{\fill}
+
+An unnumbered list:  
+    \begin{itemize}
+        \item Apple
+        \item Banana
+        \item Cucumber
+    \end{itemize}
+
+    \vspace{\fill}
+
+A list(unnumbered) with userdefined lebels:
+    \begin{description}
+        \item[Intro:] This is ann Intro
+        \item[Theory:] This is a Theory
+        \item[Code: ] This a Code   
+    \end{description}
+
+    \vspace{\fill}
+
+Another list:
+    \begin{enumerate}
+        \item [Into:] .....
+        \item [Theory] .....
+        \setcounter{enumi}{2}
+        \renewcommand{\labelenumi}{$\star$} 
+        \item ......
+    \end{enumerate}
+
+\end{document}
