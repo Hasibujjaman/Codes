@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:inputType="text"
+        android:ems="15"
+        android:hint="Main activity data (Send to Frag A)"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Fragment B data (Received from Fragment B)"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLoadFragA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Fragment A"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnLoadFragB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Fragment B"
+            android:layout_weight="1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/txtMainFragX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment X"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        android:padding="15dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragContainer"/>
+
+
+</LinearLayout>

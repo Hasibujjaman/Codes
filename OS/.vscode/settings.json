@@ -1,7 +1,11 @@
 {
     "files.associations": {
         "pthread.h": "c",
+<<<<<<< HEAD
         "thread": "cpp",
         "unistd.h": "c"
+=======
+        "thread": "cpp"
+>>>>>>> 23f4a8261db11d7bc7900fa698888d7e77ecf886
     }
 }

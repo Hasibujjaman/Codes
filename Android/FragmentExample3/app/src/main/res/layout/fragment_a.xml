@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F44336"
+    tools:context=".FragmentA">
+
+    <TextView
+        android:id="@+id/txtFragA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Received Main activity data"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edtFragA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:inputType="text"
+        android:ems="15"
+        android:hint="Send data to Fragment B"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnFragA_SendToFragB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="75dp"
+        style="@style/Widget.AppCompat.Button"
+        android:text="Send to Fragment B"/>
+
+
+</LinearLayout>
