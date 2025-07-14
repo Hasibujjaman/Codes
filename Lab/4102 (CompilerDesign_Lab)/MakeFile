@@ -1,0 +1,14 @@
+all:
+	gcc test.c -o test
+
+output: a.o b.o
+	gcc a.o b.o -o output
+a.o: a.c
+	gcc -c a.c
+b.o: b.c
+	gcc -c b.c
+
+
+clean:
+	rm *.o output
+
