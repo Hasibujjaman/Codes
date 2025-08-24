@@ -1,0 +1,13 @@
+method 1: using cmake
+
+(i). fist inlcude the programs you want to test(e.g., sample_test.cpp) in the CMakeLists.txt file
+(ii) to build/compile the test programs:  cmake -B build && make clean -C build && make -C build
+(iii) to run a test program: ./sample_test
+
+
+
+
+
+method 2: using direct makefile
+
+make f=sample_test clean && make f=sample_test

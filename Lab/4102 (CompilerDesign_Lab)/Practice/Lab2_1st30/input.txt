@@ -1,0 +1,23 @@
+int b = 4;
+ 
+ var = var + 5;
+  var = var + 5;
+while(b==3){
+    var3 = 7;
+}
+
+if(a==2){
+    var1 = 4;
+    var4 = 9;
+    var5 = 8;
+
+    if(a==5){
+        a =6;
+    }
+}
+else{
+    var2 = 5;
+}
+if(a==2){
+    var1 = 4;
+}

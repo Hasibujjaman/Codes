@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "shprototypes.h": "c",
+        "xinu.h": "c",
+        "lfilesys.h": "c",
+        "ether.h": "c",
+        "date.h": "c",
+        "shell.h": "c",
+        "locale": "c"
+    }
+}
