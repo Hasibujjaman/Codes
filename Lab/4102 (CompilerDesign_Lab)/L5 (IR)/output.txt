@@ -1,0 +1,12 @@
+In line no 1, Inserting a with type INT_TYPE in symbol table.
+In line no 2, Inserting b with type INT_TYPE in symbol table.
+Parsing finished!
+============= INTERMEDIATE CODE===============
+  0: start              -1
+  1: scan_int_value      0
+  2: ld_var              0
+  3: ld_int              1
+  4: add                -1
+  5: store               1
+  6: print_int_value     1
+  7: halt               -1

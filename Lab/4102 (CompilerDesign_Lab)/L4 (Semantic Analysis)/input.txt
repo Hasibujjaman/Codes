@@ -1,0 +1,5 @@
+int abc;
+int b;
+char c;
+abc = b + 10 + abc;
+
