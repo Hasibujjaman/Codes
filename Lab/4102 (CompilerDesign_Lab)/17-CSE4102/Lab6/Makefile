@@ -2,15 +2,14 @@ input = input.txt
 output = output.txt
 
 main: lexer.l parser.y
-	bison -d parser.y 
-	flex lexer.l 
-	gcc parser.tab.c lex.yy.c
-	./a.out < $(input) > $(output)
+	bison -d parser.y
+	flex lexer.l
+	gcc parser.tab.c lex.yy.c -o parser
+	./parser < $(input) > $(output)
 
-assembler:
-	C:\masm32\bin\ml /c /coff /Cp prog1.asm
-	C:\masm32\bin\link -entry:main /subsystem:console prog1.obj
-	prog1
+.PHONY: clean
+clean:
+	rm -f parser lex.yy.c parser.tab.c parser.tab.h $(output)
 	
 
 

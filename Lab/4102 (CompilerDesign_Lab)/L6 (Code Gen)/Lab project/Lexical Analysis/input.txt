@@ -1,0 +1,15 @@
+function main () 
+
+start
+
+       suppose A is an integer
+
+       suppose  B is an integer
+
+       A equal 2
+
+       B equal 3 add A sub 5
+
+       print(B)
+
+end

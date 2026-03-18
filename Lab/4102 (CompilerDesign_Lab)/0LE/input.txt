@@ -1,2 +1,0 @@
-let i as int = 0;
-loop until i <= 5.0;

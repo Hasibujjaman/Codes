@@ -5,24 +5,12 @@ enum code_ops
     LD_INT, 
     LD_VAR, 
     STORE, 
-    SCAN_INT_VALUE, 
     PRINT_INT_VALUE, 
     ADD,
-    SUB,
-    MUL,
-    DIV,
-    GT_OP,
-    LT_OP,
-    EQ_OP,
-    IF_START,
-    ELSE_START,
-    ELSE_END,
-    WHILE_LABEL,
-    WHILE_START,
-    WHILE_END
+    SUB
 };
 
-char *op_name[] = {"start", "halt", "ld_int", "ld_var", "store", "scan_int_value", "print_int_value", "add", "sub", "mul", "div", "gt", "lt", "eq", "if_start", "else_start", "else_end", "while_label", "while_start", "while_end"};
+static const char *op_name[] = {"start", "halt", "ld_int", "ld_var", "store", "print_int_value", "add", "sub"};
 
 struct instruction
 {
@@ -30,12 +18,8 @@ struct instruction
     int arg;
 };
 
-struct instruction code[999];
 extern int address;
-int code_offset = 0;
 
-// Prototypes
-int gen_label();
 void gen_code(enum code_ops op, int arg);
 void print_code();
 void print_assembly();

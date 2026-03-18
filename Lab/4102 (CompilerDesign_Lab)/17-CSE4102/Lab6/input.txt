@@ -1,23 +1,15 @@
-main {
-def int x;
-def float y;
-def bool isBalanced;
-def reaction r1, r2;
-x = 10;
-y = x + 5.5;
-r1 = "2*H2 + O2 -> 2*H2O";
-r2 = "H2 + O2 -> H2O";
-isBalanced = check_balance(r1);
-if (check_balance(r2)) {
-x = x + 1;
-} else {
-x = x - 1;
-}
-while (x > 5) {
-y = y + 1.0;
-x = x - 1;
-}
-if (isBalanced && (x < 10)) {
-y = y * 2;
-}
-}
+function main () 
+
+start
+
+       suppose A is an integer
+
+       suppose  B is an integer
+
+       A equal 2
+
+       B equal 3 add A sub 5
+
+       print(B)
+
+end
